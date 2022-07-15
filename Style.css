@@ -1,0 +1,43 @@
+/* Selector for item type */
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    color: rgb(84, 121, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 100px;
+}
+
+/* Selector for specific ID */
+/* IDs must be unique for each element*/
+#SpecialHeading {
+    color: rgb(112, 136, 158);
+}
+
+/* Selector for defined class added to elements */
+/* Multiple elements can share the same class */
+.tHRow {
+    color: blueviolet;
+}
+
+/* Selector for specific element type */
+input[type="password"] {
+    background-color: aquamarine;
+}
+
+tbody tr:hover {
+background-color: rgb(167, 198, 199);
+}
