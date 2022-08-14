@@ -13,12 +13,65 @@ table {
     border-width: 1px;
 }
 
-td{
+td {
     border-width: 1px;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
     width: 100px;
+}
+
+/* Select all child elements */
+div#inputform * {
+    padding: 5px 20px;
+}
+
+/* Change the display behaviour of span */
+#SpecialSpan {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+
+#one {
+    width: 200px;
+    height: 300px;
+    background-color: beige;
+    border-width: 5px;
+    border-color: brown;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+}
+
+#two {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(247, 237, 218);
+    border-width: 5px;
+    border-left-width: 10px;
+    border-top-width: 10px;
+    border-color: rgb(168, 76, 48);
+    border-bottom-color: bisque;
+    border-right-color: bisque;
+
+    border-style: inset;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+}
+
+#three {
+    width: 200px;
+    height: 300px;
+    background-color: azure;
+    margin: 5px;
+    padding: 5px;
+    border: 10px solid aquamarine;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Selector for specific ID */
@@ -39,5 +92,5 @@ input[type="password"] {
 }
 
 tbody tr:hover {
-background-color: rgb(167, 198, 199);
+    background-color: rgb(167, 198, 199);
 }
