@@ -95,11 +95,13 @@ tbody tr:hover {
     background-color: rgb(167, 198, 199);
 }
 
-a {margin: 20px;
-display: block;
-border: 2px;
-border-style: solid;
-padding: 2px;}
+a {
+    margin: 20px;
+    display: block;
+    border: 2px;
+    border-style: solid;
+    padding: 2px;
+}
 
 section {
     width: 500px;
@@ -107,69 +109,86 @@ section {
     background-color: bisque;
 }
 
-#rgba{
+#rgba {
     width: 100px;
     height: 100px;
     background-color: rgb(102, 51, 153, 0.5);
 }
 
-#opacityTest{
+#opacityTest {
     width: 100px;
     height: 100px;
     background-color: rgb(55, 201, 145);
     opacity: 0.5;
 }
 
-div.posTest{
- width: 100px;   
- height: 100px;
- background-color: coral;
- margin: 10px;
- border: 5px;
- border-style: solid;
- display: inline-block;
+div.posTest {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 10px;
+    border: 5px;
+    border-style: solid;
+    display: inline-block;
 
 }
 
-div.posTest#testSquareStatic{
+div.posTest#testSquareStatic {
     background-color: aquamarine;
     position: static;
     top: 100px;
 }
 
-div.posTest#testSquareRelative{
+div.posTest#testSquareRelative {
     background-color: aquamarine;
     position: relative;
     top: 10px;
     left: 10px;
 }
 
-div.posTest#testSquareAbsolute{
+div.posTest#testSquareAbsolute {
     background-color: aquamarine;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-div.posTest#testSquareFixed{
+div.posTest#testSquareFixed {
     background-color: aquamarine;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-div.Circle{
+div.Circle {
     width: 100px;
     height: 100px;
     border: 3px;
     border-style: solid;
     background-color: darkgray;
-    transition: 0.1s;
+    /* transition: 0.1s; */
 }
 
-div.Circle:hover{
+div.Circle:hover {
     background-color: cadetblue;
     border-radius: 50%;
-    
-    
+    transition: 0.1s;
+
+}
+
+div#TransitionTestThing1 {
+    position: absolute;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 3px;
+    border-style: solid;
+    background-color: rgb(25, 136, 130);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+
+}
+
+section.hoverThingTest:hover div {
+    margin-left: 200px;
 }
